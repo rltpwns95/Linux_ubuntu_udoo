@@ -10,13 +10,13 @@
         #include <fcntl.h>
         #include <unistd.h>
         
-        #define DEVICE_FILENAME  "/dev/led_dev"
+        #define DEVICE_FILENAME  "/dev/led_dev"                             //LED 장치 파일의 경로
         
-        void print_led(unsigned char led);
+        void print_led(unsigned char led);                                  //전달된 led 값에 따라 LED의 상태를 출력하는 함수
         int main(int argc,char * argv[])
         {
             int dev;
-            char buff = 0;
+            char buff = 0;                                                  //인자로 전달된 led 값을 buff 변수에 저장
             int ret;
         	if(argc < 2)
         	{
@@ -24,21 +24,21 @@
         		return 1;
         	}
         	buff = atoi(argv[1]);
-            dev = open( DEVICE_FILENAME, O_RDWR|O_NDELAY );
+            dev = open( DEVICE_FILENAME, O_RDWR|O_NDELAY );                  //open() 함수를 사용하여 LED 장치 파일을 열고
         	if(dev<0)
         	{
         		perror("open()");
         		return 2;
         	}
-            ret = write(dev,&buff,sizeof(buff));
+            ret = write(dev,&buff,sizeof(buff));                              //write() 함수를 사용하여 buff 값을 LED 장치 파일에 씁니다.
         	if(ret < 0)
         		perror("write()");
         	
         	buff = 0;
-        	ret = read(dev,&buff,sizeof(buff));
+        	ret = read(dev,&buff,sizeof(buff));                           //read() 함수를 사용하여 LED 장치 파일에서 읽은 값을 buff 변수에 저장
         
-        	print_led(buff);
-            close(dev);
+        	print_led(buff);                                              //print_led() 함수를 호출하여 LED 상태를 출력합니다. 
+            close(dev);                                                       //close() 함수를 사용하여 LED 장치 파일을 닫습니다.
             return 0;
         }
         void print_led(unsigned char led)
