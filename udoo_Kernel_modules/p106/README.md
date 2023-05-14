@@ -5,16 +5,16 @@ udoo에서 기존에 쓰던 파일을 nfs를 이용해서 ubuntu에 보내줬다
   MOD := hello
   obj-m := $(MOD).o
  
-  #CROSS = ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
+  (주석)CROSS = ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
   KDIR := /lib/modules/$(shell uname -r)/build
-  #KDIR := /home/udooer/kernel/linux_kernel-3.14-1.0.x-udoo
+  (주석)KDIR := /home/udooer/kernel/linux_kernel-3.14-1.0.x-udoo
   PWD := $(shell pwd)
  
   default:
       $(MAKE) -C $(KDIR) M=$(PWD) modules $(CROSS)
-  #   cp $(MOD).ko /srv/nfs
+  (주석)   cp $(MOD).ko /srv/nfs
   clean:
-  #   rm -rf *.ko
+  (주석)   rm -rf *.ko
       rm -rf *.mod.*
       rm -rf .*.cmd
       rm -rf *.o
