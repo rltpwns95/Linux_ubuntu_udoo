@@ -17,4 +17,5 @@ sudo rmmod hello.ko<br>
 
 ##실행결과<br>
 Hello, world [ onevalue=39:twostring=oh my godrmmod test]<br>
-Goodbye world
+Goodbye world<br>
+https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#6a9ab6638f414a39a3e64af0d5201ab9
