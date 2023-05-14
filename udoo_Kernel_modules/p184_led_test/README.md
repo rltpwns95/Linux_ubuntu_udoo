@@ -57,9 +57,8 @@
       			putchar('\n');
       	}
       	return;
-      }
-<br><br>
-##실행방법<br>
+      }<br><br>
+실행방법<br>
 1. make<br>
 2. sudo mknod /dev/led_dev c 240 32   (장치 파일을 생성)
 3. sudo insmod led_dev.ko    (커널 모듈을 로드)
