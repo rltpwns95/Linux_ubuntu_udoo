@@ -35,48 +35,48 @@ ENOENT오류가 나타나서 'echo $?' 를 입력했을 때 2의 값이 나오�
 커널영역에서 Hello wrold<br>
 
 
-  #include <linux/init.h>
-  #include <linux/module.h>
-  #include <linux/kernel.h>
- 
-  static int hello_init(void)
-  {
-      printk("Hello, world\n");
-      return 0;
-  }
-  static void hello_exit(void)
-  {
-      printk("Goodbye, world\n");
-  }
- 
-  module_init(hello_init);        /module_init 시작
-  module_exit(hello_exit);        /module_exit 종료
- 
-  MODULE_LICENSE("Dual BSD/GPL"); /안 넣으면 오류발생하니까 꼭 넣자.<br>
+	#include <linux/init.h>
+	#include <linux/module.h>
+	#include <linux/kernel.h>
+	
+	static int hello_init(void)
+	{
+	    printk("Hello, world\n");
+	    return 0;
+	}
+	static void hello_exit(void)
+	{
+	    printk("Goodbye, world\n");
+	}
+	
+	module_init(hello_init);        /module_init 시작
+	module_exit(hello_exit);        /module_exit 종료
+	
+	MODULE_LICENSE("Dual BSD/GPL"); /안 넣으면 오류발생하니까 꼭 넣자.<br>
 
 **커널에서는 printk를 사용한다!!!<br>
 
 이제 Makefile을 넣어준다.<br>
 
-  MOD := hello
-  obj-m := $(MOD).o             //모듈의 오브젝트명
- 
-  CROSS = ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-  //gcc있다보니 주석해도 오류는 없다.
-  #KDIR := /lib/modules/$(shell uname -r)/build
-  KDIR := /home/udooer/kernel/linux_kernel-3.14-1.0.x-udoo
-  PWD := $(shell pwd)
- 
-  default:
-      $(MAKE) -C $(KDIR) M=$(PWD) modules $(CROSS) //위에 있는 KDIR, PWD, CROSS
-  #   cp $(MOD).ko /srv/nfs
-  clean:
-  #   rm -rf *.ko              //ko은 안지워지게 하려고 주석
-      rm -rf *.mod.*
-      rm -rf .*.cmd
-      rm -rf *.o
-      rm -rf modules.order
-      rm -rf Module.symvers
-      rm -rf $(MOD).mod<br>
+ 	MOD := hello
+ 	obj-m := $(MOD).o             //모듈의 오브젝트명
+	
+ 	CROSS = ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-  //gcc있다보니 주석해도 오류는 없다.
+ 	#KDIR := /lib/modules/$(shell uname -r)/build
+ 	KDIR := /home/udooer/kernel/linux_kernel-3.14-1.0.x-udoo
+ 	PWD := $(shell pwd)
+	
+ 	default:
+ 	    $(MAKE) -C $(KDIR) M=$(PWD) modules $(CROSS) //위에 있는 KDIR, PWD, CROSS
+ 	#   cp $(MOD).ko /srv/nfs
+ 	clean:
+ 	#   rm -rf *.ko              //ko은 안지워지게 하려고 주석
+ 	    rm -rf *.mod.*
+ 	    rm -rf .*.cmd
+ 	    rm -rf *.o
+ 	    rm -rf modules.order
+ 	    rm -rf Module.symvers
+ 	    rm -rf $(MOD).mod<br>
 ![1](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/468b75fa-6fa0-4d60-8502-07725a4b9660)<br>
 이제 make명령어를 주면<br>
 ![image](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/01dcb50d-f083-4669-aadd-9b07f22f78fb)<br>
