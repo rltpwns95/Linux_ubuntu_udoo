@@ -1,5 +1,9 @@
-#커널 모듈로 led_app을 이용하여 led제어하기.
+#커널 모듈로 led_app을 이용하여 led제어하기.<br>
 
+1. 인자로 전달된 led 값에 따라 LED를 켜거나 끕니다.<br>
+2. LED의 상태를 읽어와서 켜진 LED는 'O', 꺼진 LED는 'X'로 출력합니다.<br><br>
+
+##실행방법<br>
 1. make<br>
 2. sudo mknod /dev/led_dev c 240 32   (장치 파일을 생성)
 3. sudo insmod led_dev.ko    (커널 모듈을 로드)
