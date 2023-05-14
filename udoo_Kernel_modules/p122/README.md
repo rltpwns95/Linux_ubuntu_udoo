@@ -13,7 +13,8 @@ insmod() 힘수를 사용해 모율 형태로 추가되는 객체 내 변수에 
 ##실행방법<br>
 make 명령어로 컴파일하고, 모듈을 커널에 적재하고 모듈 매개변수를 전달한다.<br>
 sudo insmod hello.ko onevalue=0x27 twostring=\"oh my godrmmod test\"<br>
-sudo rmmod hello.ko
+sudo rmmod hello.ko<br>
+
 ##실행결과<br>
 Hello, world [ onevalue=39:twostring=oh my godrmmod test]<br>
 Goodbye world
