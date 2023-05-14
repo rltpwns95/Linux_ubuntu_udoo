@@ -11,4 +11,6 @@ file hello.ko<br>
 sudo insmod hello.ko<br>
 lsmod<br>
 ![Untitled](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/0f7b4cde-a6f3-40e0-a111-3a09d5a57049)<br>
-
+sudo rmmod hello로 hello를 제거<br>
+sudo dmesg를 입력하면<br>
+![Untitled](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/7b82aa2e-c647-4f4d-8a45-229ef2576286)<br>
