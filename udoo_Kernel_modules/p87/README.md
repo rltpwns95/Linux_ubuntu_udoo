@@ -1,16 +1,11 @@
-위 코드는 /dev 디렉토리에 "testdev1"이라는 캐릭터 장치 파일을 생성하고, 이 파일을 읽기/쓰기 가능하도록 open() 함수를 이용하여 열어보는 코드입니다.
-#include <sys/types.h> 
-#include <sys/stat.h> 
-#include <fcntl.h> 
-#include <unistd.h>
-#include <errno.h>
-int main(int argc, char *argv[])      (명령행 인자(argument)의 개수, 명령행 인자들을 포인터 배열)
-{
-	int ret;
-    ret = mknod("/dev/testdev1", S_IFCHR| S_IRUSR|S_IWUSR|S_IRGRP|S_IROTH, (240<<8)|1);
-mknod() 함수를 이용하여 "/dev/testdev1" 파일을 생성합니다. 이때 S_IFCHR 플래그를 사용하여 캐릭터 장치 파일을 생성하고, S_IRUSR, S_IWUSR, S_IRGRP, S_IROTH 플래그를 사용하여 파일의 권한을 설정했습니다. 
-(S_IRUSR: 소유자 읽기 권한, S_IWUSR: 소유자 쓰기 권한, S_IRGRP: 그룹 읽기 권한, S_IROTH: 다른 사용자 읽기 권한)
-그리고 (240<<8)|1 값을 세번째 인자로 넘기는데, 이는 major number가 240이고 minor number가 1인 장치 파일을 생성하도록 지정한 것입니다.
+위 코드는 /dev 디렉토리에 "testdev1"이라는 캐릭터 장치 파일을 생성하고, 이 파일을 읽기/쓰기 가능하도록 open() 함수를 이용하여 열어보는 코드입니다.<br><br>
+
+int main(int argc, char *argv[])      (명령행 인자(argument)의 개수, 명령행 인자들을 포인터 배열)<br><br>
+
+    ret = mknod("/dev/testdev1", S_IFCHR| S_IRUSR|S_IWUSR|S_IRGRP|S_IROTH, (240<<8)|1);<br>
+mknod() 함수를 이용하여 "/dev/testdev1" 파일을 생성합니다. 이때 S_IFCHR 플래그를 사용하여 캐릭터 장치 파일을 생성하고, S_IRUSR, S_IWUSR, S_IRGRP, S_IROTH 플래그를 사용하여 파일의 권한을 설정했습니다.
+(S_IRUSR: 소유자 읽기 권한, S_IWUSR: 소유자 쓰기 권한, S_IRGRP: 그룹 읽기 권한, S_IROTH: 다른 사용자 읽기 권한)<br>
+그리고 (240<<8)|1 값을 세번째 인자로 넘기는데, 이는 major number가 240이고 minor number가 1인 장치 파일을 생성하도록 지정한 것입니다.<br><br><br>
 
 
 	if(ret<0){
