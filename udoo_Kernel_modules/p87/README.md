@@ -27,7 +27,7 @@ mknod() 함수 호출에서 에러가 발생하면, 생성하려는 파일이 �
 ![image](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/de77a2f3-d5a9-44bd-8ead-370b2658d49c)<br>
 위 사진처럼 오류가 발생하여 226~246사이에 240이 안 만들어진게 보일 것이다.<br>
 ![Untitled](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/b0d35eb7-356d-405a-a89c-23b87a358ad3)<br>
-에러코드 내용을 확인하기 위해서 'ctrl + ]' 로 해당 오류코드 설명을 확인해보았다.<br> (다시 코드로 돌아갈 때는 (ctrl + t)
+에러코드 내용을 확인하기 위해서 'ctrl + ]' 로 해당 오류코드 설명을 확인해보았다. (다시 코드로 돌아갈 때는 (ctrl + t)<br>
 ![Untitled](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/8d00a754-6cad-49d1-93bc-fd9f18225b2e)<br>
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8465279d-2627-4cfd-a281-ff7e582750e1/Untitled.png)<br>
 ENOENT오류가 나타나서 'echo $?' 를 입력했을 때 2의 값이 나오는게 보일 것이다.<br>
