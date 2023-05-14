@@ -24,6 +24,7 @@ ubuntu에선 KDIR위에껄 주석을 풀고 아래는 주석처리 왜 위에껄
 	     rm -rf Module.symvers
 	     rm -rf $(MOD).mod
 	     rm -rf .tmp_versions
+ubuntu에선 KDIR위에껄 주석을 풀고 아래는 주석처리 왜 위에껄 그대로 쓸까?<br>
 udoo에서 하듯 동일하게 실행<br>
 make<br>
 file hello.ko<br>
