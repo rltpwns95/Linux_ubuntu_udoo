@@ -21,7 +21,7 @@ mknod() 함수를 이용하여 "/dev/testdev1" 파일을 생성합니다. 이때
 	return 0;
 } <br>
 mknod() 함수 호출에서 에러가 발생하면, 생성하려는 파일이 이미 존재하는 경우가 대부분이므로 EPERM이 아니라 ENOENT를 리턴하는 것이 더 적절합니다.<br><br>
-[![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ab092569-e2ca-4ba3-a280-1dbc1fcb286c/Untitled.png)<br>](https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#f02d9236597347e787b7e2a40d2860a2)
+![image](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/2303f6df-1844-41d1-b749-352d420002a9)<br>
 오류코드: No such device or address<br>
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/990a0c75-ef56-4ca9-a9b5-e5303b31805c/Untitled.png)<br>
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4bed54f6-0da1-4ccb-b153-ead126481492/Untitled.png)<br>
