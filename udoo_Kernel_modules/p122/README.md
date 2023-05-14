@@ -25,9 +25,9 @@ Goodbye world<br>
     
     printk의 차이점
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/32b640f7-3fe2-4178-bc9b-77af1e615ff6/Untitled.png)
+    ![Untitled](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/bcd7704d-29fc-4756-9302-925fa1357597)
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/77eb633c-7a0b-46eb-b199-e9766142d414/Untitled.png)
+    ![Untitled](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/230c397f-f110-4c3a-bd00-a952f80b2141)
     
     <0> 심각한오류 동작불가
     
@@ -35,9 +35,9 @@ Goodbye world<br>
     
     #define KERN DEBUG <7> 디버그
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d5c6421b-340a-4b93-8a3d-11cd715b32d9/Untitled.png)
+    ![Untitled](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/213d030b-8033-4e63-9b9a-b61893e56a67)
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fc482111-849d-4843-a011-5d80a29b09b4/Untitled.png)
+    ![Untitled](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/3b6cfcef-fda8-4f44-893e-e24f925cfcd9)
     
     printk(KERN_DEBUG “A” “1” "goodbye, world\n"); 이렇게 쓰면 < >A1goodbye,world출력
     
