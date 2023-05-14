@@ -92,4 +92,29 @@ sudo rmmod hello : 제거 명령어<br>
 lsmod<br>
 dmesg<br>
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18fc3dfd-9d42-4001-80ce-059ca2a9bfb8/Untitled.png)<br>
-위 그림처럼 insmod로 등록하면 hello.c에 만들었던 hello_init에 넣었던, 'Hello, world'를, 이후 rmmod로 해제하면 hello_exit에 넣었던, 'goodbye, world'를 출력
+위 그림처럼 insmod로 등록하면 hello.c에 만들었던 hello_init에 넣었던, 'Hello, world'를, 이후 rmmod로 해제하면 hello_exit에 넣었던, 'goodbye, world'를 출력<br>
+https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#92bc33eaf1a44ea799b0223cf0e44a08
+
+https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#9b2a41efda684daf9344122be01a9a0b
+
+https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#2876782071d742cc9c50c8025c4488c8
+
+https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#2e11e23e4c2d4e5f8abce309d9eefb5a
+
+https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#ddf7e2627c0b4886bee01b064319994b
+
+https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#39b2fa858a5c45fa9604f08304b493b7
+
+https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#659924cc984a42158e01fba7de5f28df
+
+https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#8af4decf65a0400a908b6a63b3521b7b
+
+https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#8aba21c63fae458ba6b3f688c11b8bcf
+
+https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#728a5eb0f9a1474aae9ecb236a480cb5
+
+https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#2c930c8b4f754520b93d22656d4e140f
+
+https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#fc9bd498495f4e1496108d326dd319c4
+
+https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#99d3e8f3134f4842b812ff0ad7d3e879
