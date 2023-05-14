@@ -79,9 +79,9 @@ ENOENT오류가 나타나서 'echo $?' 를 입력했을 때 2의 값이 나오�
       rm -rf Module.symvers
       rm -rf $(MOD).mod
 <br>
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f3a7b842-c115-40cc-b7c3-fcdd403d213d/Untitled.png)<br>
+![Untitled](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/ab2801aa-00a5-4ce5-9d75-056b4208bb29)<br>
 이제 make명령어를 주면<br>
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ba83aa6f-119e-4786-892d-0528f960f5fb/Untitled.png)<br>
+![Untitled](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/cbdad8d7-7b8a-471a-ab48-bad339e5c062)<br>
 hello.ko만들어진걸 볼 수 있다.<br>
 sudo insmod hello.ko<br>
 lsmod 현재 시스템에서 로드된 커널 모듈들의 정보를 출력하는 명령어로 아래 사진처럼<br>
