@@ -15,9 +15,9 @@ mknod() 함수를 이용하여 "/dev/testdev1" 파일을 생성합니다. 이때
 	ret = open("/dev/testdev1",O_RDWR);    이어서 open() 함수를 이용하여 "/dev/testdev1" 파일을 엽니다. O_RDWR 플래그를 사용하여 읽기/쓰기가 모두 가능하도록 파일을 엽니다.
 	if(ret<0){
 		perror("open()");   만약 mknod() 함수나 open() 함수 호출 중 에러가 발생하면, perror() 함수를 이용하여 에러 메시지를 출력하고, 각각 1과 ENOENT를 리턴합니다.
-//		return EPERM          EPERM은 "Operation not permitted" (수행할 수 없는 연산)을 의미
+		return EPERM          EPERM은 "Operation not permitted" (수행할 수 없는 연산)을 의미 위에선 수석처리
 		return ENOENT;	      ENOENT는 "No such file or directory" (파일이나 디렉토리가 없음)을 의미
 	}
 	return 0;
-}<br>
+} 
 mknod() 함수 호출에서 에러가 발생하면, 생성하려는 파일이 이미 존재하는 경우가 대부분이므로 EPERM이 아니라 ENOENT를 리턴하는 것이 더 적절합니다.
