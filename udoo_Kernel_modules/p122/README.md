@@ -21,7 +21,7 @@ Goodbye world<br>
 
 - **커널 메시지 출력**
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/81ab115f-b276-4ca6-834c-b92398b16678/Untitled.png)
+    ![Untitled](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/f9b87716-cf1b-40ea-ad58-8c5a061a4205)
     
     printk의 차이점
     
