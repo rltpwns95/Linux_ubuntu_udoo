@@ -83,12 +83,12 @@ ENOENT오류가 나타나서 'echo $?' 를 입력했을 때 2의 값이 나오�
 hello.ko만들어진걸 볼 수 있다.<br>
 sudo insmod hello.ko<br>
 lsmod 현재 시스템에서 로드된 커널 모듈들의 정보를 출력하는 명령어로 아래 사진처럼<br>
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/abce2038-afd8-47c0-9c08-2c10b12e958a/Untitled.png)<br>
+![2](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/8937aeb5-2920-46ca-8921-7a5710dba8cd)<br>
 Hello가 보일 것이다.<br>
 dmesg 리눅스에서 시스템 로그 메시지를 출력하는 명령어<br>
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b61c61f-817d-43a6-9465-070972bbdeaf/Untitled.png)<br>
+![3](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/267d64ff-9fb7-4136-85a3-b114158cde91)<br>
 sudo rmmod hello : 제거 명령어<br>
 lsmod<br>
 dmesg<br>
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18fc3dfd-9d42-4001-80ce-059ca2a9bfb8/Untitled.png)<br>
+![4](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/26ddbd68-36b4-4fe2-b72a-e5047f38439d)<br>
 위 그림처럼 insmod로 등록하면 hello.c에 만들었던 hello_init에 넣었던, 'Hello, world'를, 이후 rmmod로 해제하면 hello_exit에 넣었던, 'goodbye, world'를 출력<br>
