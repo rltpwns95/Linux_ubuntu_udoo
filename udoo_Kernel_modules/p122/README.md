@@ -18,4 +18,27 @@ sudo rmmod hello.ko<br>
 ##실행결과<br>
 Hello, world [ onevalue=39:twostring=oh my godrmmod test]<br>
 Goodbye world<br>
-https://www.notion.so/udoo-796d236d2dd54ba1a8f007ca1a1bd1f3?pvs=4#6a9ab6638f414a39a3e64af0d5201ab9
+
+- **커널 메시지 출력**
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/81ab115f-b276-4ca6-834c-b92398b16678/Untitled.png)
+    
+    printk의 차이점
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/32b640f7-3fe2-4178-bc9b-77af1e615ff6/Untitled.png)
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/77eb633c-7a0b-46eb-b199-e9766142d414/Untitled.png)
+    
+    <0> 심각한오류 동작불가
+    
+    <4>
+    
+    #define KERN DEBUG <7> 디버그
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d5c6421b-340a-4b93-8a3d-11cd715b32d9/Untitled.png)
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fc482111-849d-4843-a011-5d80a29b09b4/Untitled.png)
+    
+    printk(KERN_DEBUG “A” “1” "goodbye, world\n"); 이렇게 쓰면 < >A1goodbye,world출력
+    
+    printf에서도 가능
