@@ -79,7 +79,7 @@ ENOENT오류가 나타나서 'echo $?' 를 입력했을 때 2의 값이 나오�
       rm -rf Module.symvers
       rm -rf $(MOD).mod
 <br>
-![Untitled](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/99ec2a9a-8ffb-41bf-b0fd-b50ce1c82285)<br>
+![image](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/3fa85bbe-1166-48c2-8dd4-8225fa7524b5)<br>
 이제 make명령어를 주면<br>
 ![Untitled](https://github.com/rltpwns95/Linux_ubuntu_udoo/assets/124419697/cbdad8d7-7b8a-471a-ab48-bad339e5c062)<br>
 hello.ko만들어진걸 볼 수 있다.<br>
